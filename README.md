@@ -19,8 +19,8 @@ Los enunciados están escritos para Windows. Aquí cambia esto:
 
 | En el enunciado | En el codespace |
 |---|---|
-| Abrir OpenCode en la carpeta del ejemplo | En el terminal: `cd ejemplo6` (o el que toque) y `opencode` |
-| La ventana de OpenCode | `opencode web --port 4096`, y en el aviso pulsa **Abrir en el navegador** |
+| Abrir OpenCode en la carpeta del ejemplo | OpenCode ya está encendido. En la pestaña **Puertos** de VS Code, junto a «OpenCode (web)», pulsa el globo: se abre en una pestaña propia, a pantalla completa. Guarda esa dirección. Dentro, **Añadir proyecto** y elige la carpeta del ejemplo |
+| OpenCode en el terminal (opcional) | `cd ejemplo6` (o el que toque) y `opencode` |
 | Descargar llama.cpp y el modelo, y `arrancar_decider.cmd` o `arrancar_modelo_local.cmd` | En un terminal aparte: `./arrancar_modelo.sh` (la primera vez descarga el modelo). Déjalo abierto |
 | Copiar `.env.ejemplo` como `.env` y pegar la clave | No hace falta si pusiste la clave al crear el codespace. Si no: `cp .env.ejemplo .env` en la carpeta del ejemplo y edítalo |
 | `$env:SOLO_GRABADAS = "1"` (ejemplo 11b) | `export SOLO_GRABADAS=1` |

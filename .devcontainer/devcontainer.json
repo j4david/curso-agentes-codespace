@@ -2,6 +2,7 @@
   "name": "Agentes y automatización con IA: ejemplos 6 a 12",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "postCreateCommand": "bash .devcontainer/preparar.sh",
+  "postStartCommand": "bash .devcontainer/arrancar_opencode.sh",
   "forwardPorts": [4096],
   "portsAttributes": {
     "4096": { "label": "OpenCode (web)", "onAutoForward": "notify" },
