@@ -1,0 +1,24 @@
+{
+  "categoria": {
+    "type": "choice",
+    "instructions": "¿Qué pide principalmente este correo al Servicio de Ayudas del Ayuntamiento?",
+    "criteria": {
+      "solicitud_informacion": "Pide información sobre una ayuda: requisitos, plazos, compatibilidad.",
+      "presentacion_documentacion": "Aporta documentos para una solicitud sin que se los hayan requerido.",
+      "subsanacion": "Responde a un requerimiento del Ayuntamiento sobre un expediente.",
+      "queja": "Se queja o reclama por una decisión o por el servicio.",
+      "incidencia_tecnica": "Un problema técnico con el portal o la sede electrónica.",
+      "cita_previa": "Pide, cambia o anula una cita presencial.",
+      "spam": "Publicidad, fraude o mensajes no solicitados.",
+      "otro": "Correo legítimo que no es de este buzón o que no pide nada."
+    }
+  },
+  "requiere_persona": {
+    "type": "noul",
+    "instructions": "¿Necesita que una persona del Servicio lo atienda antes de responder?",
+    "criteria": {
+      "true": "Hay una queja o reclamación, instrucciones sospechosas, datos de terceros, un conflicto o una decisión discrecional como ampliar un plazo.",
+      "false": "Se puede responder o tramitar de forma ordinaria, o es publicidad que se descarta."
+    }
+  }
+}

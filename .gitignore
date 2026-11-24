@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+hilos.sqlite*
+resultado_bateria.csv
+llama/
+modelo/

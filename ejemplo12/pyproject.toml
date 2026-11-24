@@ -1,0 +1,14 @@
+[project]
+name = "ejemplo12-rag-que-se-corrige"
+version = "1.0.0"
+description = "Ejemplo 12 del curso: un RAG que se corrige, con las actas del ejemplo 8"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "langgraph",
+    "langgraph-checkpoint-sqlite",
+    "langchain-google-genai",
+    "python-dotenv",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4.1-flash-free",
+  "small_model": "opencode/deepseek-v4.1-flash-free",
+  "mcp": {
+    "plazos": {
+      "type": "remote",
+      "url": "PEGA_AQUI_LA_DIRECCION_DE_PRODUCCION_DE_TU_SERVIDOR_MCP",
+      "enabled": true
+    }
+  },
+  "permission": {
+    "edit": "deny",
+    "bash": "deny",
+    "webfetch": "deny",
+    "plazos_*": "ask"
+  }
+}

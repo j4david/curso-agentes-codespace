@@ -1,0 +1,13 @@
+[project]
+name = "ejemplo11b-segunda-opinion"
+version = "1.0.0"
+description = "Ejemplo 11b del curso: dos modelos clasifican a la vez y el código compara"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "langgraph",
+    "langchain-google-genai",
+    "python-dotenv",
+]
+
+[tool.uv]
+package = false

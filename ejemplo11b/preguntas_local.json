@@ -1,0 +1,16 @@
+{
+  "categoria": {
+    "type": "choice",
+    "instructions": "Clasifica el correo según la petición principal que hace al Servicio de Ayudas del Ayuntamiento (ayuda al alquiler, rehabilitación de fachadas o beca de comedor).",
+    "criteria": {
+      "solicitud_informacion": "La persona pregunta algo: requisitos, plazos, importes, compatibilidad o cómo se tramita una ayuda. No adjunta documentos ni pide cita.",
+      "presentacion_documentacion": "La persona adjunta o envía documentos (contrato, recibos, DNI, facturas) para su solicitud por iniciativa propia, sin que el Ayuntamiento se los haya pedido.",
+      "subsanacion": "La persona contesta a un requerimiento o a una carta del Ayuntamiento sobre su expediente, normalmente con un número de expediente, o pide algo dentro de ese expediente.",
+      "queja": "La persona protesta, está enfadada o anuncia una reclamación por una decisión, una denegación o el trato recibido.",
+      "incidencia_tecnica": "La persona no puede usar el portal o la sede electrónica: un error, un archivo que no sube, una página que no carga.",
+      "cita_previa": "La persona quiere que la atiendan en persona: pide, cambia o anula una cita.",
+      "spam": "Publicidad de una empresa, una oferta comercial, un fraude o un enlace sospechoso. No es de un ciudadano con una ayuda.",
+      "otro": "Un correo legítimo que no es para este servicio (por ejemplo, de otro departamento o un agradecimiento) o que no pide nada."
+    }
+  }
+}

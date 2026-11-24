@@ -1,0 +1,16 @@
+{
+  "name": "Agentes y automatización con IA: ejemplos 6 a 12",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "postCreateCommand": "bash .devcontainer/preparar.sh",
+  "forwardPorts": [4096],
+  "portsAttributes": {
+    "4096": { "label": "OpenCode (web)", "onAutoForward": "notify" },
+    "8092": { "label": "Modelo local (llama.cpp)", "onAutoForward": "silent" }
+  },
+  "secrets": {
+    "GOOGLE_API_KEY": {
+      "description": "Tu clave de Google AI Studio (Gemini). La usan los ejemplos 11, 11b y 12. Si la dejas en blanco, puedes ponerla después en un archivo .env.",
+      "documentationUrl": "https://aistudio.google.com/apikey"
+    }
+  }
+}
