@@ -10,6 +10,8 @@ Todos los datos de los ejemplos son ficticios.
 2. Si te pide la clave **GOOGLE_API_KEY**, pega tu clave de Gemini (la de Google AI Studio). Si no la tienes aún, déjala en blanco.
 3. Espera a que termine de prepararse (unos minutos la primera vez). Cuando el terminal diga «Listo», abre un terminal nuevo con el **+**.
 4. Si VS Code pregunta si confías en los autores de la carpeta, pulsa **Confiar en la carpeta y continuar**.
+5. **Tu clave de OpenRouter** (la del campus, para OpenCode): en el terminal, `opencode auth login -p openrouter` y pégala cuando la pida. Solo una vez.
+6. **Tu clave de Gemini** (ejemplos 11, 11b y 12), si no la pusiste al crear el codespace: https://github.com/settings/codespaces → **New secret**, nombre `GOOGLE_API_KEY`, y en *Repository access* elige este repositorio. Después, reinicia el codespace. También vale un `.env` en la carpeta de cada ejemplo.
 
 Para volver otro día: https://github.com/codespaces y abre el tuyo. Se para solo si no lo usas.
 
@@ -19,7 +21,7 @@ Los enunciados están escritos para Windows. Aquí cambia esto:
 
 | En el enunciado | En el codespace |
 |---|---|
-| Abrir OpenCode en la carpeta del ejemplo | OpenCode ya está encendido. En la pestaña **Puertos** de VS Code, junto a «OpenCode (web)», pulsa el globo: se abre en una pestaña propia, a pantalla completa. Guarda esa dirección. Dentro, **Añadir proyecto** y elige la carpeta del ejemplo |
+| Abrir OpenCode en la carpeta del ejemplo | OpenCode ya está encendido. En la pestaña **Puertos** de VS Code, junto a «OpenCode (web)», pulsa el globo: se abre en una pestaña propia, a pantalla completa. Guarda esa dirección. Dentro, **Añadir proyecto**, escribe `/workspaces/curso-agentes-codespace/` y elige la carpeta del ejemplo |
 | OpenCode en el terminal (opcional) | `cd ejemplo6` (o el que toque) y `opencode` |
 | Descargar llama.cpp y el modelo, y `arrancar_decider.cmd` o `arrancar_modelo_local.cmd` | En un terminal aparte: `./arrancar_modelo.sh` (la primera vez descarga el modelo). Déjalo abierto |
 | Copiar `.env.ejemplo` como `.env` y pegar la clave | No hace falta si pusiste la clave al crear el codespace. Si no: `cp .env.ejemplo .env` en la carpeta del ejemplo y edítalo |

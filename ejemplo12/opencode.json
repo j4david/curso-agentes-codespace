@@ -1,7 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "opencode/deepseek-v4.1-flash-free",
-  "small_model": "opencode/deepseek-v4.1-flash-free",
+  "model": "openrouter/deepseek/deepseek-v4.1-flash",
+  "small_model": "openrouter/deepseek/deepseek-v4.1-flash",
+  "provider": {
+    "openrouter": {
+      "models": {
+        "deepseek/deepseek-v4.1-flash": { "options": { "provider": { "sort": "price" } } }
+      }
+    }
+  },
   "permission": {
     "edit": "ask",
     "bash": "ask",
