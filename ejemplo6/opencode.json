@@ -11,17 +11,10 @@
       }
     }
   },
-  "mcp": {
-    "plazos": {
-      "type": "remote",
-      "url": "PEGA_AQUI_LA_DIRECCION_DE_PRODUCCION_DE_TU_SERVIDOR_MCP",
-      "enabled": true
-    }
-  },
   "permission": {
-    "edit": "deny",
-    "bash": "deny",
+    "edit": "ask",
+    "bash": "ask",
     "webfetch": "deny",
-    "plazos_*": "ask"
+    "read": {"*": "allow", "*.env": "deny", ".env": "deny"}
   }
 }

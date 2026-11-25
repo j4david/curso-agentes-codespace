@@ -12,9 +12,9 @@
     }
   },
   "permission": {
-    "edit": "deny",
-    "bash": "deny",
+    "edit": "ask",
+    "bash": "ask",
     "webfetch": "deny",
-    "decidir": "allow"
+    "read": {"*": "allow", "*.env": "deny", ".env": "deny"}
   }
 }

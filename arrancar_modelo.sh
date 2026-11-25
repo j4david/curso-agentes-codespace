@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Arranca el modelo local de los ejemplos 9 y 11b (http://127.0.0.1:8092).
+# Arranca el modelo local de los ejemplos 14 y 8b (http://127.0.0.1:8092).
 # La primera vez descarga el modelo (812 MB, unos segundos).
 # Deja este terminal abierto mientras lo uses; para pararlo, Ctrl+C.
 set -e

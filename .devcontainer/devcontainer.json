@@ -1,5 +1,5 @@
 {
-  "name": "Agentes y automatización con IA: ejemplos 6 a 12",
+  "name": "Agentes y automatización con IA: ejemplos 6 a 9, 11 y 14",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "postCreateCommand": "bash .devcontainer/preparar.sh",
   "postStartCommand": "nohup bash .devcontainer/arrancar_opencode.sh > /dev/null 2>&1",
@@ -11,7 +11,7 @@
   },
   "secrets": {
     "GOOGLE_API_KEY": {
-      "description": "Tu clave de Google AI Studio (Gemini). La usan los ejemplos 11, 11b y 12. Si la dejas en blanco, puedes ponerla después en un archivo .env.",
+      "description": "Tu clave de Google AI Studio (Gemini). La usan los ejemplos 6 a 9 (LangGraph). Si prefieres OpenRouter, mira el paso 7 del README. Si la dejas en blanco, puedes ponerla después en un archivo .env.",
       "documentationUrl": "https://aistudio.google.com/apikey"
     }
   }

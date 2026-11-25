@@ -1,0 +1,14 @@
+[project]
+name = "ejemploL1-del-flujo-al-grafo"
+version = "1.0.0"
+description = "Las piezas de LangGraph, sin modelo, y la prueba de la clave"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "langgraph==1.2.24",
+    "langchain-google-genai",
+    "langchain-openrouter",
+    "python-dotenv",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,6 @@
+alerta_id,clasificacion,acciones,necesita_persona
+ALT-0501,critica,aislar_equipo escalar_responsable_seguridad notificar_dpd,sí
+ALT-0502,media,bloquear_ip notificar_responsable,sí
+ALT-0503,informativa,abrir_ticket,no
+ALT-0504,informativa,registrar escalar_responsable_seguridad,sí
+ALT-0505,critica,aislar_equipo escalar_responsable_seguridad notificar_dpd,sí
