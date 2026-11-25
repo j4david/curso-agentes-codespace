@@ -1,6 +1,6 @@
 """Ejemplo 9 · Un RAG que se corrige.
 
-Las mismas 25 actas ficticias del ejemplo 13, ahora con un grafo que se revisa a sí mismo:
+Un grafo que se revisa a sí mismo al preguntar a las 25 actas ficticias de esta carpeta:
 
   enrutar → recuperar → calificar los pasajes ─┬─ hay pasajes útiles → generar → comprobar ─┬─ bien → responder
                  ↑                             │                                           │
@@ -9,7 +9,7 @@ Las mismas 25 actas ficticias del ejemplo 13, ahora con un grafo que se revisa a
 
 - El modelo hace de BUSCADOR (reescribir), de REDACTOR (generar) y de JUEZ (calificar, comprobar).
 - El CÓDIGO decide las flechas y pone el TOPE: como mucho, MAX_REESCRITURAS.
-- «Contar en todas las actas» no se intenta: eso se hace extrayendo y contando con código (ejemplo 13).
+- «Contar en todas las actas» no se intenta: eso se hace extrayendo y contando con código.
 """
 
 import json
@@ -28,7 +28,7 @@ load_dotenv()  # lee la clave del archivo .env de esta carpeta
 # ---------------------------------------------------------------------------
 
 MAX_REESCRITURAS = 1   # el TOPE: cuántas veces se puede reescribir la búsqueda
-PASAJES = 4            # cuántos trozos se recuperan en cada búsqueda (como el ejemplo 13)
+PASAJES = 4            # cuántos trozos se recuperan en cada búsqueda
 
 # Lo que se le pide al juez de pasajes. Se mide con medir_juez.py antes de fiarse de él.
 INSTRUCCIONES_JUEZ = ("Eres un juez estricto. Para cada pasaje, di solo si ayuda a responder la pregunta: "
@@ -207,8 +207,7 @@ def contar(e: Estado) -> dict:
     """CÓDIGO. No se intenta: se remite al método que sí funciona."""
     return {"destino": "contar con código",
             "respuesta": ("Esta pregunta pide recorrer todas las actas. Un buscador de pasajes no la "
-                          "resuelve bien: hay que extraer una tabla de cada acta y contar con código "
-                          "(flujo «contar asistencias» del ejemplo 13)."),
+                          "resuelve bien: hay que extraer una tabla de cada acta y contar con código."),
             "registro": ["contar: se remite a extraer y contar con código"]}
 
 

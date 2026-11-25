@@ -1,13 +1,9 @@
-"""Hacer una pregunta a las actas y ver el registro del grafo paso a paso.
+"""Preguntar a las actas por código de preguntas.csv o con una pregunta entre comillas."""
 
-Uso: uv run python preguntar.py "¿Cuál es el límite de tamaño de los adjuntos?"
-     uv run python preguntar.py K1          (una pregunta de preguntas.csv por su código)
-"""
-
+import argparse
 import csv
-import sys
 
-from grafo import construir
+from grafo import construir, generar, recuperar
 
 PREGUNTAS = {f["id"]: f["pregunta"] for f in csv.DictReader(open("preguntas.csv", encoding="utf-8"))}
 
@@ -26,10 +22,19 @@ def preguntar(pregunta: str, ver=True) -> dict:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print(__doc__)
-        raise SystemExit
-    p = PREGUNTAS.get(sys.argv[1], " ".join(sys.argv[1:]))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("pregunta", nargs="+")
+    parser.add_argument("--simple", action="store_true",
+                        help="Recupera los pasajes una vez y encarga al modelo que responda.")
+    args = parser.parse_args()
+    entrada = " ".join(args.pregunta)
+    p = PREGUNTAS.get(entrada, entrada)
     print(f"Pregunta: {p}\n")
-    r = preguntar(p)
-    print(f"\n[{r.get('destino')}]\n{r.get('respuesta')}")
+    if args.simple:
+        recuperacion = recuperar({"busqueda": p})
+        print(f"  · {recuperacion['registro'][0]}")
+        respuesta = generar({"pregunta": p, "utiles": recuperacion["pasajes"]})
+        print(f"\n[RAG simple]\n{respuesta['respuesta']}")
+    else:
+        r = preguntar(p)
+        print(f"\n[{r.get('destino')}]\n{r.get('respuesta')}")

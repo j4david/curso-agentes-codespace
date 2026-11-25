@@ -1,6 +1,9 @@
 {
-  "name": "Agentes y automatización con IA: ejemplos 6 a 9, 11 y 14",
+  "name": "Agentes y automatización con IA",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
   "postCreateCommand": "bash .devcontainer/preparar.sh",
   "postStartCommand": "nohup bash .devcontainer/arrancar_opencode.sh > /dev/null 2>&1",
   "postAttachCommand": "nohup bash .devcontainer/arrancar_opencode.sh > /dev/null 2>&1",

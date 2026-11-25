@@ -15,7 +15,7 @@ import time
 
 MODELO_EMBEDDINGS = "models/gemini-embedding-001"
 DIMENSIONES = 768
-TAMANO_TROZO = 1800   # caracteres, como en el ejemplo 13
+TAMANO_TROZO = 1800   # caracteres
 
 
 def trocear(ruta: pathlib.Path) -> list[dict]:

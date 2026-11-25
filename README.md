@@ -4,6 +4,13 @@ Esta plantilla prepara un ordenador en la nube de GitHub (un *codespace*) con to
 
 Todos los datos de los ejemplos son ficticios.
 
+## Prácticas con OpenCode
+
+- [Ejemplo 10 · El buzón con mínimo privilegio](ejemplo10/opencode/LEEME.md)
+- [Ejemplo 12 · El formulario escaneado](ejemplo12/opencode/LEEME.md)
+
+Las dos prácticas usan la clave individual de OpenRouter del paso 5. Abre un terminal en la carpeta indicada en cada práctica.
+
 ## Crear tu codespace (una vez)
 
 0. **Antes de crearlo**, en https://github.com/settings/codespaces, pon **Default idle timeout** en **60** minutos y pulsa **Save**. Si no, el codespace se para tras 30 minutos sin tocarlo, por ejemplo durante una explicación.

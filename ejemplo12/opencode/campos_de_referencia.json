@@ -1,0 +1,37 @@
+{
+  "1": {
+    "dni_nie": "99012345J",
+    "iban": "ES6099990001410000123456",
+    "telefono": "600 000 101",
+    "fecha_nacimiento": "14/03/1988",
+    "fecha_solicitud": "26/10/2026"
+  },
+  "2": {
+    "dni_nie": "99023456S",
+    "iban": "ES3799990002950000234567",
+    "telefono": "600 000 202",
+    "fecha_nacimiento": "02/11/1975",
+    "fecha_solicitud": "27/10/2026"
+  },
+  "3": {
+    "dni_nie": "X9034567Y",
+    "iban": "ES4499990003390000345678",
+    "telefono": "600 000 303",
+    "fecha_nacimiento": "21/07/1992",
+    "fecha_solicitud": "28/10/2026"
+  },
+  "4": {
+    "dni_nie": "99045678L",
+    "iban": "ES2499990004820000456789",
+    "telefono": "",
+    "fecha_nacimiento": "09/09/1983",
+    "fecha_solicitud": "29/10/2026"
+  },
+  "5": {
+    "dni_nie": "99056789E",
+    "iban": "ES7099990005230000555213",
+    "telefono": "600 000 505",
+    "fecha_nacimiento": "31/06/1990",
+    "fecha_solicitud": "02/11/2026"
+  }
+}
