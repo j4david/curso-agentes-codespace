@@ -6,6 +6,7 @@ Todos los datos de los ejemplos son ficticios.
 
 ## Crear tu codespace (una vez)
 
+0. **Antes de crearlo**, en https://github.com/settings/codespaces, pon **Default idle timeout** en **60** minutos y pulsa **Save**. Si no, el codespace se para tras 30 minutos sin tocarlo, por ejemplo durante una explicación.
 1. Arriba, pulsa **Use this template → Open in a codespace**.
 2. Si te pide la clave **GOOGLE_API_KEY**, pega tu clave de Gemini (la de Google AI Studio). Si no la tienes aún, déjala en blanco.
 3. Espera a que termine de prepararse (unos minutos la primera vez). Cuando el terminal diga «Listo», abre un terminal nuevo con el **+**.
