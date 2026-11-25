@@ -14,7 +14,9 @@ Todos los datos de los ejemplos son ficticios.
 5. **Tu clave de OpenRouter** (la del campus, para OpenCode): en el terminal, `opencode auth login -p openrouter` y pégala cuando la pida. Solo una vez.
 6. **Tu clave de Gemini** (ejemplos 11, 11b y 12), si no la pusiste al crear el codespace: https://github.com/settings/codespaces → **New secret**, nombre `GOOGLE_API_KEY`, y en *Repository access* elige este repositorio. Después, reinicia el codespace. También vale un `.env` en la carpeta de cada ejemplo.
 
-Para volver otro día: https://github.com/codespaces y abre el tuyo. Se para solo si no lo usas.
+Para volver otro día: https://github.com/codespaces y abre el tuyo.
+
+**Al terminar cada día, páralo:** en https://github.com/codespaces, menú **⋯** del tuyo → **Stop codespace**. Se para solo tras el tiempo de inactividad (60 minutos sin tocar VS Code), y lo que dejes ejecutándose (OpenCode, el modelo local) no lo mantiene encendido; aun así, pararlo a mano evita gastar horas de más. Si no has puesto tarjeta en GitHub, nunca te cobra: al agotar las horas, se bloquea hasta el mes siguiente. Puedes ver lo gastado en https://github.com/settings/billing/usage (despliega cada día con la flecha).
 
 ## Equivalencias con los enunciados
 
