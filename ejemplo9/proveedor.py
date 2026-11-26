@@ -44,7 +44,8 @@ def chat():
     if proveedor() == "openrouter":
         from langchain_openrouter import ChatOpenRouter
 
-        return ChatOpenRouter(model=MODELO_OPENROUTER, temperature=0, rate_limiter=ritmo, max_retries=3)
+        # timeout en milisegundos: si OpenRouter no responde en 90 s, se corta y se reintenta.
+        return ChatOpenRouter(model=MODELO_OPENROUTER, temperature=0, rate_limiter=ritmo, max_retries=3, timeout=90_000)
     from langchain_google_genai import ChatGoogleGenerativeAI
 
     return ChatGoogleGenerativeAI(model=MODELO_GEMINI, temperature=0, rate_limiter=ritmo, max_retries=3)
